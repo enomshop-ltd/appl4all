@@ -4,7 +4,6 @@ export function Product(props: { children?: ComponentChildren }) {
   return (
 
     <Product class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-      <!-- LEFT: Images -->
       <div class="space-y-4">
         <div class="rounded-xl overflow-hidden bg-white p-6 shadow-sm">
           <div class="relative">
@@ -25,7 +24,6 @@ export function Product(props: { children?: ComponentChildren }) {
         </div>
       </div>
 
-      <!-- RIGHT: Product Info -->
       <aside class="sticky top-6">
         <div class="bg-white rounded-xl shadow p-6 lg:p-8">
           <h1 class="text-2xl lg:text-3xl font-extrabold leading-tight">Plums <span class="text-base font-medium text-gray-500">• 1.00 kg</span></h1>
@@ -45,7 +43,6 @@ export function Product(props: { children?: ComponentChildren }) {
             </div>
           </div>
 
-          <!-- Delivery & Stock -->
           <div class="mt-5 border rounded-lg p-4 bg-gray-50 flex items-center gap-4">
             <div class="flex-1 text-sm">
               <div class="font-medium">Delivery in 10-15 mins</div>
@@ -54,7 +51,6 @@ export function Product(props: { children?: ComponentChildren }) {
             <div class="text-sm font-medium text-green-600">In Stock</div>
           </div>
 
-          <!-- Quantity & Add -->
           <div class="mt-5">
             <label for="qty" class="block text-sm font-medium text-gray-700 mb-2">Quantity <span class="text-xs text-gray-400">(99 available)</span></label>
             <div class="flex items-center gap-3">
@@ -94,7 +90,6 @@ export function Product(props: { children?: ComponentChildren }) {
 
         </div>
 
-        <!-- Collapsible Details Card -->
         <div class="mt-6 bg-white rounded-xl p-4 shadow-sm">
           <button aria-expanded="false" class="w-full flex items-center justify-between py-2 px-1" id="toggleDetails">
             <span class="font-medium">Nutrition & Details</span>
@@ -109,7 +104,6 @@ export function Product(props: { children?: ComponentChildren }) {
           </div>
         </div>
 
-        <!-- Mobile sticky CTA -->
         <div id="mobileCta" class="fixed left-0 right-0 bottom-4 px-4 lg:hidden">
           <div class="max-w-3xl mx-auto">
             <button id="mobileAdd" class="w-full bg-green-600 text-white rounded-full py-3 font-semibold shadow-lg">🛒 Add to Cart — ₹450</button>
