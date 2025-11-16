@@ -1,4 +1,4 @@
-mport { define } from "../../../../utils.ts";
+import { define } from "../../../../utils.ts";
 
 export const handler = define.handlers({
   async POST(ctx) {
