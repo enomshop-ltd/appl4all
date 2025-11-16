@@ -1,10 +1,10 @@
 import { define } from "../../../../utils.ts";
-import { default as client } from "../../_utils/mongoDb.ts";
+//import { default as client } from "../../_utils/mongoDb.ts";
 
 export const handler = define.handlers({
   async POST(ctx) {
     return new Response(
-      `Hello, ${name.charAt(0).toUpperCase() + name.slice(1)}!`,
+      `Hello!`,
     );
   },
 });
